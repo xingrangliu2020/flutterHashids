@@ -1,0 +1,35 @@
+name: example
+description: >
+  The QR.Flutter example app.
+version: 2.0.0
+author: Yakka, LLC <hello@yakka.agency>
+homepage: https://github.com/lukef/qr.flutter
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.7.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  fluttertoast: ^8.0.1-nullsafety.0
+  permission_handler: ^9.2.0
+  android_path_provider: ^0.3.0
+
+  qr_flutter:
+    path: ../
+
+  hashids2: ^2.0.0
+  path_provider: ^2.0.1
+  dio: ^4.0.0-beta6
+  saver_gallery:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: false
+  assets:
+    - assets/images/logo_yakka.png
